@@ -1,0 +1,136 @@
+server:
+  port: 10202
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  application:
+    name: alita-dance-provider
+      #zipkin:
+      #base-url: http://127.0.0.1:9060
+      #sleuth:
+      #sampler:
+    #percentage: 0.1
+  rabbitmq:
+    addresses: 172.19.59.9:5672,172.19.59.6:5672
+    username: admin
+    password: 111111
+    #    cache:
+    #      connection:
+    #        size: 100
+    listener:
+      retry:
+        max-interval: 3
+        enabled: true
+        initial-interval: 3000
+      default-requeue-rejected: true
+  redis:
+    session:
+      enabled: true
+    packages-to-scan: "com.aimymusic.appserver"
+    expired-time: 3600
+    page-size: 20
+    host: "172.19.59.8"
+    port: 6379
+    database: 1
+    pool:
+      max-active: 300
+      min-idle: 100
+      max-idle: 100
+      max-wait: 1000
+    password: "111111"
+    timeout: 10000
+  jpa:
+    enabled: true
+    enable-transaction: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        #dialect: "com.aimymusic.appserver.datasource.jpa.extension.MySQLDefineDialect"
+        show_sql: false
+
+appserver:
+  active: dev
+  jdbc:
+    enable-lazy-proxy: true
+    enable-dynamic-switching: true
+    default-data-source:
+      name: "default"
+      base-url: "jdbc:mysql://rm-uf62vd0bji29c0wk2.mysql.rds.aliyuncs.com:3306"
+      db: "aimymusic_alita_dm"
+      search-url: "rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true"
+      driver-class-name: "com.mysql.jdbc.Driver"
+      username: "root"
+      password: "Qxhy2017!"
+      initial-size: 50
+      min-idle: 50
+      max-idle: 100
+      max-active: 400
+      max-wait: 2000
+      test-while-idle: true
+      test-on-borrow: true
+      test-on-return: false
+      validation-interval: 30000
+      validation-query: "select 1"
+      time-between-eviction-runs-millis: 30000
+      min-evictable-idle-time-millis: 300000
+      remove-abandoned-timeout: 120
+      remove-abandoned: true
+      default-read-only: false
+      default-auto-commit: true
+
+
+  jpa:
+    enabled: true
+    enable-transaction: true
+
+  mybatis:
+    enabled: true
+    type-aliases-package: "com.aimymusic.appserver.pojo.dto"
+    type-handlers-package: "com.aimymusic.appserver.pojo.typeHandler"
+    mapper-locations: "classpath:mapper/*.xml"
+
+
+  http:
+    enabled: true
+    time-out-socket: 5000
+    time-out-connection: 2000
+    time-out-request-connection: 5000
+    retry-number: 2
+    max-total: 500
+    client-properties:
+      iothttp:
+        host: "iot.singworld.net:58880"
+        max-pre-route: 300
+        url-map:
+          pid: 3
+          key: "5c874e483bc779432cc03992"
+          secret: "EusbmeIeDvhZUJXQ8dhfU7RrYaByASxY"
+          validMachineToken: /api/iot/v1/token
+      songRecommendApi:
+        host: "bigdata-gateway.singworld.net:58880"
+        max-pre-route: 300
+        url-map:
+          e5Recommend: /bd-song-service/e5Recommend
+
+
+  mqtt:
+    enabled: true
+    enabled-cluster: 1
+    host: "tcp://106.15.183.57:1883"
+    prefix: "aimymusic/alita"
+    username: "admin"
+    password: "public"
+    server-client-id: ${random.value}
+    default-topic: "aimymusic/alita/dancingMachine"
+    timeout: 10
+    keep-alive: 20
+    qos: 2
+
