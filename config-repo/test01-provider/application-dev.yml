@@ -1,0 +1,14 @@
+server:
+  port: 9292
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  application:
+    name: cmlx-test01-provider
+
