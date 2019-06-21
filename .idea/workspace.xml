@@ -15,16 +15,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config-repo/test-provider/application-dev.yml">
+        <entry file="file://$PROJECT_DIR$/config-repo/test-provider/application-test01-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config-repo/test01-provider/application-dev.yml">
+        <entry file="file://$PROJECT_DIR$/config-repo/test01-provider/application-test-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="30" />
@@ -130,7 +130,7 @@
       <updated>1560942182725</updated>
       <workItem from="1560942187898" duration="1708000" />
       <workItem from="1561004194286" duration="2016000" />
-      <workItem from="1561086927113" duration="2078000" />
+      <workItem from="1561086927113" duration="2228000" />
     </task>
     <task id="LOCAL-00001" summary="feat:配置中心初始化">
       <created>1560945274493</created>
@@ -160,15 +160,21 @@
       <option name="project" value="LOCAL" />
       <updated>1561087138063</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat:修改配置文件名字">
+      <created>1561098316011</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561098316012</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5802000" />
+    <option name="totallyTimeSpent" value="5952000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2196162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -213,19 +219,20 @@
     <MESSAGE value="feat:测试配置中心" />
     <MESSAGE value="feat:增加测试配置" />
     <MESSAGE value="feat:增加调用端配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:增加调用端配置" />
+    <MESSAGE value="feat:修改配置文件名字" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:修改配置文件名字" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config-repo/dance-provider/application-dance-dev.yml" />
     <entry file="file://$PROJECT_DIR$/config-repo/test-provider/application.yml" />
-    <entry file="file://$PROJECT_DIR$/config-repo/test-provider/application-dev.yml">
+    <entry file="file://$PROJECT_DIR$/config-repo/test-provider/application-test01-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config-repo/test01-provider/application-dev.yml">
+    <entry file="file://$PROJECT_DIR$/config-repo/test01-provider/application-test-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="30" />
