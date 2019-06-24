@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="213721e3-c11b-4313-9d49-5b5863c184bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/test-provider/application-test-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/test-provider/application-test-dev.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config-repo/test-provider/application-test-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="550">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -136,7 +135,7 @@
       <workItem from="1560942187898" duration="1708000" />
       <workItem from="1561004194286" duration="2016000" />
       <workItem from="1561086927113" duration="3714000" />
-      <workItem from="1561346623515" duration="476000" />
+      <workItem from="1561346623515" duration="1213000" />
     </task>
     <task id="LOCAL-00001" summary="feat:配置中心初始化">
       <created>1560945274493</created>
@@ -180,11 +179,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561098562378</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat:添加邮箱配置">
+      <created>1561347129374</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561347129374</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7914000" />
+    <option name="totallyTimeSpent" value="8651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
@@ -234,7 +240,8 @@
     <MESSAGE value="feat:增加测试配置" />
     <MESSAGE value="feat:增加调用端配置" />
     <MESSAGE value="feat:修改配置文件名字" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:修改配置文件名字" />
+    <MESSAGE value="feat:添加邮箱配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:添加邮箱配置" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config-repo/dance-provider/application-dance-dev.yml" />
@@ -248,8 +255,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config-repo/test-provider/application-test-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="550">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
