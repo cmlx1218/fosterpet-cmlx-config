@@ -12,3 +12,11 @@ spring:
   application:
     name: cmlx-test-provider
 
+  mail:
+    host: smtp.163.com
+    username: cmlx1218@163.com
+    password: cmlx1218
+    default-encoding: UTF-8
+  fromMail:
+    addr: cmlx1218@163.com
+
