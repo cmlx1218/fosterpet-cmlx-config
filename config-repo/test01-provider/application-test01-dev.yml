@@ -12,3 +12,6 @@ spring:
   application:
     name: cmlx-test01-provider
 
+feign:
+  hystrix:
+    enabled: true
